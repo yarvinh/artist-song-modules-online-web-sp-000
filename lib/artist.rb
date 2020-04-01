@@ -7,6 +7,7 @@ class Artist
   attr_reader :songs
 
   @@artists = []
+  @@neutral = @@artist
 
   def initialize
     # @@artists << self
