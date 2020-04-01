@@ -6,3 +6,19 @@ require 'pry'
 
 require_relative '../lib/artist.rb'
 require_relative '../lib/song.rb'
+
+module Memorable
+    module InstanceMethods
+      def to_param
+        name.downcase.gsub(' ', '-')
+      end
+
+    module ClassMethods
+      def reset_all
+        self.all.clear
+      end
+     #is in song
+      def count
+        self.all.count
+      end
+  end
