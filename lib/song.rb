@@ -7,7 +7,7 @@ class Song
   attr_reader :artist
 
   @@songs = []
-  @@neutral = @@songs
+  
   def initialize
     self.class.all << self
     # @@songs << self
@@ -18,8 +18,7 @@ class Song
   # end
 
   def self.all
-    # @@songs
-    @@neutral
+    @@songs
   end
    #is in artist
   # def self.reset_all
