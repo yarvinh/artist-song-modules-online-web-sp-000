@@ -14,10 +14,10 @@ class Artist
     self.class.all << self
     @songs = []
   end
-  #method is in song but dising only for artist
-  # def self.find_by_name(name)
-  #   @@artists.detect{|a| a.name == name}
-  # end
+  method is in song but dising only for artist
+  def self.find_by_name(name)
+    @@artists.detect{|a| a.name == name}
+  end
 
   def self.all
      @@artists
